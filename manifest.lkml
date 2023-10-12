@@ -1,19 +1,19 @@
 constant: CONNECTION_NAME {
-  value: "cortex"
+  value: "demo_looker_to_test_cortex_fw"
   export: override_required
 }
 
 constant: GCP_PROJECT {
-  value: "GCP Project Name"
+  value: "int-data-department"
   export: override_required
 }
 
 constant: REPORTING_DATASET {
-  value: "Reporting Dataset Name"
+  value: "test_sap_reporting"
   export: override_required
 }
 
 constant: CLIENT {
-  value: "Client ID"
+  value: "mandt"
   export: override_required
 }
