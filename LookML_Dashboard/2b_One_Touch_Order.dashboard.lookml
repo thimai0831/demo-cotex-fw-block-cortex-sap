@@ -17,7 +17,7 @@
       currency_conversion_new.tcurr, sales_orders.max_sold_to_party_name, sales_orders.max_ship_to_party_name,
       sales_orders.max_bill_to_party_name]
     filters:
-      sales_orders.sales_order_status: Closed
+      sales_orders.sales_order_status: Canceled
       deliveries.date_created_erdat_date: 2022/01/01 to 2022/04/22
       sales_orders.division_spart: ''
     sorts: [sales_orders.max_sold_to_party_name desc]
