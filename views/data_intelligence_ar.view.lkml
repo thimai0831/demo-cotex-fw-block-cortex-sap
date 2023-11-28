@@ -329,12 +329,12 @@ view: data_intelligence_ar {
     hidden: yes
     sql:
       CASE
-        when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST(CURRENT_DATE() as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(CAST(CURRENT_DATE() as Date),INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
+        when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST('2023-10-01' as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(CAST('2023-10-01' as Date),INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
       THEN ${Sales_Global_Currency}
       END;;
     #sql:
     #CASE
-    #when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST(CURRENT_DATE() as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(${Current_Fiscal_Date_date},INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
+    #when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST('2023-10-01' as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(${Current_Fiscal_Date_date},INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
     #THEN ${Sales_Global_Currency}
     #END;;
     }
@@ -344,12 +344,12 @@ view: data_intelligence_ar {
     hidden: yes
     sql:
     CASE
-      when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST(CURRENT_DATE() as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(CAST(CURRENT_DATE() as Date),INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
+      when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST('2023-10-01' as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(CAST('2023-10-01' as Date),INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
     THEN ${Accounts_Receivable_Global_Currency}
     END;;
   #sql:
   #CASE
-  #when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST(CURRENT_DATE() as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(${Current_Fiscal_Date_date},INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
+  #when CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)<= CAST('2023-10-01' as Date) and CAST(${TABLE}.PostingDateInTheDocument_BUDAT as Date)>= DATE_SUB(${Current_Fiscal_Date_date},INTERVAL {% parameter Day_Sales_Outstanding %} MONTH )
   #THEN ${Accounts_Receivable_Global_Currency}
   #END;;
     }
