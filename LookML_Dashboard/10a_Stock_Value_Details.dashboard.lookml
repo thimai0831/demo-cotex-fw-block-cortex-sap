@@ -11,8 +11,8 @@
     explore: inventory_by_plant
     type: looker_column
     fields: [inventory_by_plant.plant_name_name2, inventory_by_plant.sum_inventory_value_target_currency_for_plant]
-    filters:
-      inventory_by_plant.week_end_date: today
+#     filters:
+#       inventory_by_plant.week_end_date: today
     sorts: [inventory_by_plant.sum_inventory_value_target_currency_for_plant desc
         0]
     limit: 500
@@ -101,8 +101,8 @@
       inventory_by_plant.quantity_menge, inventory_by_plant.stock_characteristic,
       inventory_by_plant.inventory_value_target_currency, inventory_by_plant.exchange_rate,
       inventory_by_plant.target_currency, inventory_by_plant.company_text_butxt]
-    filters:
-      inventory_by_plant.week_end_date: today
+#     filters:
+#       inventory_by_plant.week_end_date: today
     sorts: [inventory_by_plant.plant_name_name2]
     limit: 500
     column_limit: 50
