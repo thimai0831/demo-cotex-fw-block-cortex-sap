@@ -423,7 +423,7 @@ view: data_intelligence_ar {
 
   dimension: Current_Date{
     type: date
-    sql: cast((CURRENT_TIMESTAMP()) as timestamp) ;;
+    sql: cast('2022-09-01') as timestamp) ;;
     html: {{ rendered_value | date: "%m-%d-%Y" }} ;;
   }
 
