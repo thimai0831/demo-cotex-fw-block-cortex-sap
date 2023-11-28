@@ -98,7 +98,7 @@
     fields: [inventory_metrics_overview.sum_slow_moving_inventory_target_currency,
       inventory_metrics_overview.sum_inventory_value_target_currency]
     filters:
-      inventory_metrics_overview.month_end_month: last month
+      inventory_metrics_overview.month_end_month: 2023/09/01 to 2023/10/01
     limit: 500
     column_limit: 50
     custom_color_enabled: true
