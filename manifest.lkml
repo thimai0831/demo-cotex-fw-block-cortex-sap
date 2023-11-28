@@ -14,6 +14,6 @@ constant: REPORTING_DATASET {
 }
 
 constant: CLIENT {
-  value: "mandt"
+  value: "100"
   export: override_required
 }
